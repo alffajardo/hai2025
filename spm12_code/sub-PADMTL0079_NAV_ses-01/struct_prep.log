@@ -1,0 +1,25 @@
+[?1h=
+                                 < M A T L A B (R) >
+                       Copyright 1984-2020 The MathWorks, Inc.
+                   R2020b Update 8 (9.9.0.2037887) 64-bit (maci64)
+                                   August 10, 2022
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+Initialising batch system... done.
+[Warning: Load failed:
+'/Users/alfonsofajardovaldez/Documents/GitHub/hai2025_neur608/spm12_code/sub-PADMTL0079_NAV_ses-01/anat_job.m'] 
+[> In spm_jobman>load_jobs (line 329)
+In spm_jobman (line 143)
+In anat (line 10)
+In run (line 91)] 
+[Warning: No batch job found in
+'/Users/alfonsofajardovaldez/Documents/GitHub/hai2025_neur608/spm12_code/sub-PADMTL0079_NAV_ses-01/anat_job.m'] 
+[> In spm_jobman>load_jobs (line 354)
+In spm_jobman (line 143)
+In anat (line 10)
+In run (line 91)] 
+No valid job.
+[?1l>

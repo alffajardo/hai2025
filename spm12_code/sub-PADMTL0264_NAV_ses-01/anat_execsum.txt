@@ -1,0 +1,11 @@
+
+++ ===================== Execution Summary =====================
+++ Subject ID:                sub-PADMTL0264_NAV_ses-01
+++ MATLAB job status:         SUCCESS
+++ Files renamed:             11
+++ Copy of warped file:       SUCCESS
+++ Anatomical template file:  SUCCESS
+++ Voxel size (mm):           4 x 4 x 4
+++ Field of View (mm):        316 x 380 x 272
+++ Final output location:     /Users/alfonsofajardovaldez/Documents/GitHub/hai2025_neur608/spm12_code/sub-PADMTL0264_NAV_ses-01/anat/sub-PADMTL0264_NAV_ses-01_space-tpl_T1w.nii
+++ Finished: Tue Oct  8 10:43:37 EDT 2024
