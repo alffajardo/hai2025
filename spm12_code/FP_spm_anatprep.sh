@@ -221,8 +221,6 @@ echo "++ Renaming files in the workdir to more descriptive names for $subject_id
 
 # Create a dictionary of known filenames and their descriptive counterparts
 declare -A filename_map=(
-    ["y_"]="deformation_field_forward"
-    ["iy_"]="deformation_field_inverse"
     ["c1"]="gray_matter_segment"
     ["c2"]="white_matter_segment"
     ["c3"]="csf_segment"
