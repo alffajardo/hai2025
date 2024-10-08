@@ -1,5 +1,5 @@
 %-----------------------------------------------------------------------
-% Job saved on 08-Oct-2024 14:00:56 by cfg_util (rev $Rev: 7345 $)
+% Job saved on 08-Oct-2024 19:28:19 by cfg_util (rev $Rev: 7345 $)
 % spm SPM - SPM12 (7771)
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
@@ -65,4 +65,72 @@ matlabbatch{7}.spm.spatial.smooth.data(1) = cfg_dep('Image Calculator: ImCalc Co
 matlabbatch{7}.spm.spatial.smooth.fwhm = [4 4 4];
 matlabbatch{7}.spm.spatial.smooth.dtype = 0;
 matlabbatch{7}.spm.spatial.smooth.im = 0;
-matlabbatch{7}.spm.spatial.smooth.prefix = 'pet2tpl_fwhm_04mm';
+matlabbatch{7}.spm.spatial.smooth.prefix = 'pet2tpl_fwhm_04mm_';
+matlabbatch{8}.spm.spatial.normalise.write.subj.def = {'/Users/alfonsofajardovaldez/Documents/GitHub/hai2025/spm12_code/sub-PADMTL0354_NAV_ses-01/anat/workdir/sub-PADMTL0354_NAV_ses-01_iy_sub-PADMTL0354_NAV_ses-01_T1w.nii'};
+matlabbatch{8}.spm.spatial.normalise.write.subj.resample(1) = cfg_dep('Image Calculator: ImCalc Computed Image: tpl_brainmask', substruct('.','val', '{}',{5}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{8}.spm.spatial.normalise.write.woptions.bb = [-78 -112 -70
+                                                          78 76 85];
+matlabbatch{8}.spm.spatial.normalise.write.woptions.vox = [2 2 2];
+matlabbatch{8}.spm.spatial.normalise.write.woptions.interp = 1;
+matlabbatch{8}.spm.spatial.normalise.write.woptions.prefix = 'tpl2anat';
+matlabbatch{9}.spm.util.imcalc.input(1) = cfg_dep('Normalise: Write: Normalised Images (Subj 1)', substruct('.','val', '{}',{8}, '.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{1}, '.','files'));
+matlabbatch{9}.spm.util.imcalc.output = 'tpl2anat_brainmask';
+matlabbatch{9}.spm.util.imcalc.outdir(1) = cfg_dep('Get Pathnames: Directories', substruct('.','val', '{}',{4}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','p'));
+matlabbatch{9}.spm.util.imcalc.expression = 'i1 > 0.1';
+matlabbatch{9}.spm.util.imcalc.var = struct('name', {}, 'value', {});
+matlabbatch{9}.spm.util.imcalc.options.dmtx = 0;
+matlabbatch{9}.spm.util.imcalc.options.mask = 0;
+matlabbatch{9}.spm.util.imcalc.options.interp = 0;
+matlabbatch{9}.spm.util.imcalc.options.dtype = 4;
+matlabbatch{10}.spm.util.imcalc.input(1) = cfg_dep('Coregister: Estimate & Reslice: Coregistered Images', substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','cfiles'));
+matlabbatch{10}.spm.util.imcalc.input(2) = cfg_dep('Image Calculator: ImCalc Computed Image: tpl2anat_brainmask', substruct('.','val', '{}',{9}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{10}.spm.util.imcalc.output = 'masked_meanpetvol';
+matlabbatch{10}.spm.util.imcalc.outdir(1) = cfg_dep('Get Pathnames: Directories', substruct('.','val', '{}',{4}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','p'));
+matlabbatch{10}.spm.util.imcalc.expression = 'i2.*i1';
+matlabbatch{10}.spm.util.imcalc.var = struct('name', {}, 'value', {});
+matlabbatch{10}.spm.util.imcalc.options.dmtx = 0;
+matlabbatch{10}.spm.util.imcalc.options.mask = 0;
+matlabbatch{10}.spm.util.imcalc.options.interp = 0;
+matlabbatch{10}.spm.util.imcalc.options.dtype = 16;
+matlabbatch{11}.spm.spatial.coreg.write.ref(1) = cfg_dep('Image Calculator: ImCalc Computed Image: tpl2anat_brainmask', substruct('.','val', '{}',{9}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{11}.spm.spatial.coreg.write.source(1) = cfg_dep('Image Calculator: ImCalc Computed Image: masked_meanpetvol', substruct('.','val', '{}',{10}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{11}.spm.spatial.coreg.write.roptions.interp = 0;
+matlabbatch{11}.spm.spatial.coreg.write.roptions.wrap = [0 0 0];
+matlabbatch{11}.spm.spatial.coreg.write.roptions.mask = 0;
+matlabbatch{11}.spm.spatial.coreg.write.roptions.prefix = 'pet2anat_2mm_vol';
+matlabbatch{12}.spm.spatial.smooth.data(1) = cfg_dep('Image Calculator: ImCalc Computed Image: masked_meanpetvol', substruct('.','val', '{}',{10}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{12}.spm.spatial.smooth.fwhm = [2 2 2];
+matlabbatch{12}.spm.spatial.smooth.dtype = 0;
+matlabbatch{12}.spm.spatial.smooth.im = 0;
+matlabbatch{12}.spm.spatial.smooth.prefix = 'fwhm_4mm_';
+matlabbatch{13}.spm.util.imcalc.input = {'/Users/alfonsofajardovaldez/Documents/GitHub/hai2025/spm12_code/template_spm12/voi_WhlCbl_2mm_spm12.nii,1'};
+matlabbatch{13}.spm.util.imcalc.output = 'tpl_2mm_WC';
+matlabbatch{13}.spm.util.imcalc.outdir(1) = cfg_dep('Get Pathnames: Directories', substruct('.','val', '{}',{4}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','p'));
+matlabbatch{13}.spm.util.imcalc.expression = 'i1';
+matlabbatch{13}.spm.util.imcalc.var = struct('name', {}, 'value', {});
+matlabbatch{13}.spm.util.imcalc.options.dmtx = 0;
+matlabbatch{13}.spm.util.imcalc.options.mask = 0;
+matlabbatch{13}.spm.util.imcalc.options.interp = 0;
+matlabbatch{13}.spm.util.imcalc.options.dtype = 4;
+matlabbatch{14}.spm.spatial.normalise.write.subj.def = {'/Users/alfonsofajardovaldez/Documents/GitHub/hai2025/spm12_code/sub-PADMTL0354_NAV_ses-01/anat/workdir/sub-PADMTL0354_NAV_ses-01_iy_sub-PADMTL0354_NAV_ses-01_T1w.nii'};
+matlabbatch{14}.spm.spatial.normalise.write.subj.resample(1) = cfg_dep('Image Calculator: ImCalc Computed Image: tpl_2mm_WC', substruct('.','val', '{}',{13}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{14}.spm.spatial.normalise.write.woptions.bb = [-78 -112 -70
+                                                           78 76 85];
+matlabbatch{14}.spm.spatial.normalise.write.woptions.vox = [2 2 2];
+matlabbatch{14}.spm.spatial.normalise.write.woptions.interp = 4;
+matlabbatch{14}.spm.spatial.normalise.write.woptions.prefix = 'tpl2anat';
+matlabbatch{15}.spm.util.imcalc.input(1) = cfg_dep('Normalise: Write: Normalised Images (Subj 1)', substruct('.','val', '{}',{14}, '.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('()',{1}, '.','files'));
+matlabbatch{15}.spm.util.imcalc.output = 'tpl2anat_WCmask_bin';
+matlabbatch{15}.spm.util.imcalc.outdir(1) = cfg_dep('Get Pathnames: Directories', substruct('.','val', '{}',{4}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','p'));
+matlabbatch{15}.spm.util.imcalc.expression = 'i1 > 0.1';
+matlabbatch{15}.spm.util.imcalc.var = struct('name', {}, 'value', {});
+matlabbatch{15}.spm.util.imcalc.options.dmtx = 0;
+matlabbatch{15}.spm.util.imcalc.options.mask = 0;
+matlabbatch{15}.spm.util.imcalc.options.interp = 1;
+matlabbatch{15}.spm.util.imcalc.options.dtype = 4;
+matlabbatch{16}.spm.spatial.coreg.write.ref(1) = cfg_dep('Image Calculator: ImCalc Computed Image: tpl2anat_WCmask_bin', substruct('.','val', '{}',{15}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{16}.spm.spatial.coreg.write.source(1) = cfg_dep('Smooth: Smoothed Images', substruct('.','val', '{}',{12}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','files'));
+matlabbatch{16}.spm.spatial.coreg.write.roptions.interp = 0;
+matlabbatch{16}.spm.spatial.coreg.write.roptions.wrap = [0 0 0];
+matlabbatch{16}.spm.spatial.coreg.write.roptions.mask = 0;
+matlabbatch{16}.spm.spatial.coreg.write.roptions.prefix = 'resampled_2mm';

@@ -1,8 +1,8 @@
 [?1h=
-                                         < M A T L A B (R) >
-                               Copyright 1984-2020 The MathWorks, Inc.
-                           R2020b Update 8 (9.9.0.2037887) 64-bit (maci64)
-                                           August 10, 2022
+                                 < M A T L A B (R) >
+                       Copyright 1984-2020 The MathWorks, Inc.
+                   R2020b Update 8 (9.9.0.2037887) 64-bit (maci64)
+                                   August 10, 2022
 
  
 For online documentation, see https://www.mathworks.com/support
@@ -13,19 +13,19 @@ Item 'Voxel sizes', field 'val': Size mismatch (required [1  1], present [1  3])
 
 
 ------------------------------------------------------------------------
-08-Oct-2024 12:07:04 - Running job #1
+08-Oct-2024 17:05:32 - Running job #1
 ------------------------------------------------------------------------
-08-Oct-2024 12:07:04 - Running 'Segment'
+08-Oct-2024 17:05:32 - Running 'Segment'
 
-SPM12: spm_preproc_run (v7670)                     12:07:04 - 08/10/2024
+SPM12: spm_preproc_run (v7670)                     17:05:33 - 08/10/2024
 ========================================================================
 [?1h=Segment /Users/alfonsofajardovaldez/Documents/GitHub/hai2025/spm12_code/sub-PADMTL0354_NAV_ses-01/anat/workdir/sub-PADMTL0354_NAV_ses-01_T1w.nii,1
-Completed                               :          12:08:52 - 08/10/2024
-08-Oct-2024 12:08:52 - Done    'Segment'
-08-Oct-2024 12:08:52 - Running 'Get Pathnames'
-08-Oct-2024 12:08:52 - Done    'Get Pathnames'
-08-Oct-2024 12:08:52 - Running 'Normalise: Write'
-08-Oct-2024 12:08:58 - Done    'Normalise: Write'
-08-Oct-2024 12:08:58 - Done
+Completed                               :          17:07:24 - 08/10/2024
+08-Oct-2024 17:07:24 - Done    'Segment'
+08-Oct-2024 17:07:24 - Running 'Get Pathnames'
+08-Oct-2024 17:07:24 - Done    'Get Pathnames'
+08-Oct-2024 17:07:24 - Running 'Normalise: Write'
+08-Oct-2024 17:07:27 - Done    'Normalise: Write'
+08-Oct-2024 17:07:27 - Done
 
 [?1l>

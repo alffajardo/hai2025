@@ -1,6 +1,6 @@
 
 %-----------------------------------------------------------------------
-% Job saved on 08-Oct-2024 12:06:54 by cfg_util (rev $Rev: 7345 $)
+% Job saved on 08-Oct-2024 17:05:21 by cfg_util (rev $Rev: 7345 $)
 % spm SPM - SPM12 (7771)
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
@@ -39,7 +39,7 @@ matlabbatch{1}.spm.spatial.preproc.warp.affreg = 'mni';
 matlabbatch{1}.spm.spatial.preproc.warp.fwhm = 0;
 matlabbatch{1}.spm.spatial.preproc.warp.samp = 3;
 matlabbatch{1}.spm.spatial.preproc.warp.write = [1 1];
-matlabbatch{1}.spm.spatial.preproc.warp.vox = [1 1 1];
+matlabbatch{1}.spm.spatial.preproc.warp.vox = [2 2 2];
 matlabbatch{1}.spm.spatial.preproc.warp.bb = [NaN NaN NaN
                                               NaN NaN NaN];
 matlabbatch{2}.cfg_basicio.file_dir.cfg_fileparts.files(1) = cfg_dep('Segment: Bias Corrected (1)', substruct('.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','channel', '()',{1}, '.','biascorr', '()',{':'}));
@@ -47,7 +47,7 @@ matlabbatch{3}.spm.spatial.normalise.write.subj.def(1) = cfg_dep('Segment: Forwa
 matlabbatch{3}.spm.spatial.normalise.write.subj.resample(1) = cfg_dep('Segment: Bias Corrected (1)', substruct('.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','channel', '()',{1}, '.','biascorr', '()',{':'}));
 matlabbatch{3}.spm.spatial.normalise.write.woptions.bb = [-78 -112 -70
                                                           78 76 85];
-matlabbatch{3}.spm.spatial.normalise.write.woptions.vox = [1 1 1];
+matlabbatch{3}.spm.spatial.normalise.write.woptions.vox = [2 2 2];
 matlabbatch{3}.spm.spatial.normalise.write.woptions.interp = 7;
 matlabbatch{3}.spm.spatial.normalise.write.woptions.prefix = 'w';  
 

@@ -5,7 +5,7 @@
 ++ Files renamed:             11
 ++ Copy of warped file:       SUCCESS
 ++ Anatomical template file:  SUCCESS
-++ Voxel size (mm):           1 x 1 x 1
-++ Field of View (mm):        79 x 95 x 68
+++ Voxel size (mm):           2 x 2 x 2
+++ Field of View (mm):        158 x 190 x 136
 ++ Final output location:     /Users/alfonsofajardovaldez/Documents/GitHub/hai2025/spm12_code/sub-PADMTL0354_NAV_ses-01/anat/sub-PADMTL0354_NAV_ses-01_space-tpl_T1w.nii
-++ Finished: Tue Oct  8 12:08:59 EDT 2024
+++ Finished: Tue Oct  8 17:07:28 EDT 2024
