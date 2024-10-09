@@ -1,3 +1,5 @@
 *.nii
 *.nii.gz
-sub-PATMTL*
+sub-*/
+anat/
+pet/
