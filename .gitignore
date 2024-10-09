@@ -1,6 +1,6 @@
 *.nii
 *.nii.gz
-sub-*/
-anat/
-pet/
-template*/
+sub-*/*
+anat/*
+pet/*
+template*/*
